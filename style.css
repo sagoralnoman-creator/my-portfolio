@@ -172,4 +172,74 @@ button { font: inherit; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.theme-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 40px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+}
+
+html[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f4f7fc;
+  --surface: #ffffff;
+  --surface-2: #edf2fa;
+  --text: #17243a;
+  --muted: #586980;
+  --line: rgba(23, 36, 58, .15);
+  --accent: #7354d6;
+  --cyan: #087f86;
+}
+
+html[data-theme="light"] body,
+html[data-theme="light"] .site-footer {
+  background: var(--bg);
+  color: var(--text);
+}
+
+html[data-theme="light"] .site-header {
+  background: rgba(244, 247, 252, .92);
+}
+
+html[data-theme="light"] .art-card {
+  background: linear-gradient(145deg, #e2eaf6, #f7f9fc);
+  color: var(--text);
+}
+
+html[data-theme="light"] .floating-tag,
+html[data-theme="light"] .service-card,
+html[data-theme="light"] .project-card,
+html[data-theme="light"] .education-card {
+  background: #ffffff;
+  color: var(--text);
+}
+
+html[data-theme="light"] .skills-section,
+html[data-theme="light"] .education-section {
+  background: #edf2fa;
+}
+
+html[data-theme="light"] .project-preview {
+  background: linear-gradient(135deg, #dce6f4, #f4f7fc);
+}
+
+html[data-theme="light"] .contact-section {
+  background: #eef3fa;
+}
+
+html[data-theme="light"] .email-link {
+  color: #ffffff;
 }

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Soyad Noman Al Rojab — web developer and digital marketer.">
-  <meta name="theme-color" content="#081426">
+  <meta name="theme-color" content="#081426" id="themeColorMeta">
   <title>Soyad Noman Al Rojab | Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -18,7 +18,10 @@
       <a href="#education" data-bn="শিক্ষা" data-en="Education">Education</a>
       <a href="#contact" data-bn="যোগাযোগ" data-en="Contact">Contact</a>
     </nav>
-    <button id="languageButton" class="language-button" type="button" aria-label="Switch language">বাংলা</button>
+    <div class="header-controls">
+      <button id="themeButton" class="theme-button" type="button" aria-label="Switch to light theme" aria-pressed="false"><span id="themeIcon" aria-hidden="true">☀</span><span id="themeLabel" data-bn="লাইট" data-en="Light">Light</span></button>
+      <button id="languageButton" class="language-button" type="button" aria-label="Switch language">বাংলা</button>
+    </div>
   </header>
 
   <main>
