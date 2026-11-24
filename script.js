@@ -3,7 +3,13 @@ const translatableElements = document.querySelectorAll("[data-bn][data-en]");
 const yearElement = document.getElementById("year");
 let language = "en";
 
-function applyLanguage() {
+yearElement.textContent = new Date().getFullYear();
+
+document.documentElement.lang = language;
+languageButton.textContent = "বাংলা";
+
+languageButton.addEventListener("click", () => {
+  language = language === "en" ? "bn" : "en";
   document.documentElement.lang = language;
 
   translatableElements.forEach((element) => {
@@ -11,12 +17,4 @@ function applyLanguage() {
   });
 
   languageButton.textContent = language === "en" ? "বাংলা" : "English";
-}
-
-yearElement.textContent = new Date().getFullYear();
-applyLanguage();
-
-languageButton.addEventListener("click", () => {
-  language = language === "en" ? "bn" : "en";
-  applyLanguage();
 });

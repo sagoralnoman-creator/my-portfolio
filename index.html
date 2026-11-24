@@ -1,153 +1,148 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Soyad Noman Al Rojab — Web Developer and Digital Marketer">
-  <title>Noman | Portfolio</title>
-  <link rel="stylesheet" href="/style.css">
+  <meta name="description" content="Soyad Noman Al Rojab — web developer and digital marketer.">
+  <meta name="theme-color" content="#081426">
+  <title>Soyad Noman Al Rojab | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header class="topbar">
-    <a class="brand" href="#home">Noman</a>
-    <button id="languageButton" class="language-button" type="button">বাংলা</button>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Noman home">Noman</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#about" data-bn="পরিচিতি" data-en="About">About</a>
+      <a href="#skills" data-bn="দক্ষতা" data-en="Skills">Skills</a>
+      <a href="#work" data-bn="কাজ" data-en="Work">Work</a>
+      <a href="#education" data-bn="শিক্ষা" data-en="Education">Education</a>
+      <a href="#contact" data-bn="যোগাযোগ" data-en="Contact">Contact</a>
+    </nav>
+    <button id="languageButton" class="language-button" type="button" aria-label="Switch language">বাংলা</button>
   </header>
 
   <main>
-    <section class="hero" id="home">
-      <img class="hero-image" src="hero-image.svg" alt="আমার নির্বাচিত ছবি">
-      <div class="hero-shade"></div>
-
-      <div class="hero-content">
-        <p class="eyebrow" data-bn="হ্যালো, আমি" data-en="Hello, I am">Hello, I am</p>
-
-        <h1 class="name-box tracking-tight">Soyad Noman Al Rojab</h1>
-
-        <p
-          class="role"
-          data-bn="ওয়েব ডেভেলপার · ডিজিটাল মার্কেটার"
-          data-en="Web Developer · Digital Marketer"
-        >Web Developer · Digital Marketer</p>
-
-        <div class="social-row">
-          <a href="mailto:md.nomansagor.8@gmail.com" aria-label="Email">✉</a>
-          <a href="tel:+8801560061094" aria-label="Phone">☎</a>
-
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span><span data-bn="ওয়েব ডেভেলপার · ডিজিটাল মার্কেটার" data-en="WEB DEVELOPER · DIGITAL MARKETER">WEB DEVELOPER · DIGITAL MARKETER</span></p>
+        <h1><span data-bn="হ্যালো, আমি" data-en="Hello, I’m">Hello, I’m</span><br><span class="hero-name">Soyad Noman<br class="name-break"> Al Rojab</span></h1>
+        <p class="hero-description" data-bn="আমি HTML, CSS ও JavaScript দিয়ে ওয়েবসাইট তৈরি করি এবং ডিজিটাল মার্কেটিং করি। সুন্দর ও সহজে ব্যবহার করা যায়—এমন অনলাইন অভিজ্ঞতা তৈরি করতে ভালোবাসি।" data-en="I build websites with HTML, CSS, and JavaScript, and work in digital marketing. I enjoy creating clear, attractive, and easy-to-use online experiences.">I build websites with HTML, CSS, and JavaScript, and work in digital marketing. I enjoy creating clear, attractive, and easy-to-use online experiences.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contact"><span data-bn="যোগাযোগ করুন" data-en="Contact me">Contact me</span><span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#work"><span data-bn="আমার কাজ দেখুন" data-en="Explore my work">Explore my work</span><span aria-hidden="true">↓</span></a>
         </div>
-
-        <p
-          class="intro"
-          data-bn="আমি আনন্দমোহন কলেজ, ময়মনসিংহ থেকে ইসলামিক স্টাডিজে মাস্টার্স সম্পন্ন করেছি। HTML, CSS ও JavaScript দিয়ে ওয়েবসাইট তৈরি করি এবং ডিজিটাল মার্কেটিং করি। নতুন কিছু শেখা ও সুন্দর, ব্যবহারবান্ধব ওয়েবসাইট তৈরি করতে ভালোবাসি।"
-          data-en="I completed my Master’s in Islamic Studies at Ananda Mohan College, Mymensingh. I build websites with HTML, CSS, and JavaScript, and work in digital marketing. I enjoy learning new things and creating attractive, user-friendly websites."
-        >I completed my Master’s in Islamic Studies at Ananda Mohan College, Mymensingh. I build websites with HTML, CSS, and JavaScript, and work in digital marketing. I enjoy learning new things and creating attractive, user-friendly websites.</p>
+        <div class="hero-meta">
+          <span data-bn="মাস্টার্স · ইসলামিক স্টাডিজ" data-en="Master’s · Islamic Studies">Master’s · Islamic Studies</span>
+          <span class="meta-divider"></span>
+          <span data-bn="ময়মনসিংহ, বাংলাদেশ" data-en="Mymensingh, Bangladesh">Mymensingh, Bangladesh</span>
+        </div>
       </div>
 
-      <nav class="side-nav" aria-label="Page sections">
-        <a href="#about" data-bn="পরিচিতি" data-en="About">About</a>
-        <a href="#skills" data-bn="দক্ষতা" data-en="Skills">Skills</a>
-        <a href="#projects" data-bn="প্রজেক্ট" data-en="Projects">Projects</a>
-        <a href="#education" data-bn="শিক্ষা" data-en="Education">Education</a>
-        <a href="#contact" data-bn="যোগাযোগ" data-en="Contact">Contact</a>
-      </nav>
-
-      <a class="scroll-link" href="#about" aria-label="Scroll down">↓</a>
+      <div class="hero-art" aria-label="Noman monogram graphic">
+        <div class="art-orbit orbit-one"></div>
+        <div class="art-orbit orbit-two"></div>
+        <div class="art-card">
+          <span class="art-kicker">PORTFOLIO / 2026</span>
+          <div class="art-image-frame"><img src="hero-image.svg" alt="Company artwork"></div>
+          <div class="art-caption">
+            <span class="art-caption-label" data-bn="আমার কাজের ক্ষেত্র" data-en="MY FOCUS">MY FOCUS</span>
+            <strong>Web &amp; Digital</strong>
+          </div>
+          <span class="art-spark" aria-hidden="true">✳</span>
+        </div>
+        <div class="floating-tag tag-code"><span class="tag-dot"></span> HTML · CSS · JS</div>
+        <div class="floating-tag tag-marketing"><span class="tag-dot tag-dot-cyan"></span> Digital Marketing</div>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to about section"><span></span></a>
     </section>
 
-    <section class="content-section" id="about">
-      <div class="section-inner">
-        <p class="section-label">01 / <span data-bn="পরিচিতি" data-en="ABOUT">ABOUT</span></p>
-        <h2 data-bn="আমার সম্পর্কে" data-en="About me">About me</h2>
-        <p
-          data-bn="আমি একজন ওয়েব ডেভেলপার ও ডিজিটাল মার্কেটার। ইসলামিক স্টাডিজে মাস্টার্স শেষ করার পর ডিজিটাল মার্কেটিং এবং ওয়েবসাইট ডেভেলপমেন্ট শিখেছি। এখন নিজের দক্ষতা দিয়ে মানুষের আইডিয়াকে অনলাইনে তুলে ধরতে কাজ করছি।"
-          data-en="I’m a web developer and digital marketer. After completing my Master’s in Islamic Studies, I learned digital marketing and website development. I’m now using my skills to help bring ideas online."
-        >I’m a web developer and digital marketer. After completing my Master’s in Islamic Studies, I learned digital marketing and website development. I’m now using my skills to help bring ideas online.</p>
+    <section class="about-section section-wrap section-block" id="about">
+      <div class="section-heading">
+        <p class="section-kicker">01 / <span data-bn="পরিচিতি" data-en="ABOUT">ABOUT</span></p>
+        <h2 data-bn="আমার সম্পর্কে" data-en="A little about me">A little about me</h2>
+      </div>
+      <div class="about-content">
+        <p class="about-lead" data-bn="আমি একজন ওয়েব ডেভেলপার ও ডিজিটাল মার্কেটার। ইসলামিক স্টাডিজে মাস্টার্স শেষ করার পর ডিজিটাল মার্কেটিং ও ওয়েবসাইট ডেভেলপমেন্ট শিখেছি। এখন আমার দক্ষতা দিয়ে মানুষের আইডিয়াকে অনলাইনে তুলে ধরতে কাজ করছি।" data-en="I’m a web developer and digital marketer. After completing my Master’s in Islamic Studies, I learned digital marketing and website development. I’m now using these skills to help bring ideas online.">I’m a web developer and digital marketer. After completing my Master’s in Islamic Studies, I learned digital marketing and website development. I’m now using these skills to help bring ideas online.</p>
+        <div class="about-facts">
+          <div class="fact"><span class="fact-number">01</span><span data-bn="আনন্দমোহন কলেজ" data-en="Ananda Mohan College">Ananda Mohan College</span></div>
+          <div class="fact"><span class="fact-number">02</span><span data-bn="ইসলামিক স্টাডিজে মাস্টার্স" data-en="Master’s in Islamic Studies">Master’s in Islamic Studies</span></div>
+          <div class="fact"><span class="fact-number">03</span><span data-bn="ওয়েব ও ডিজিটাল মার্কেটিং" data-en="Web &amp; digital marketing">Web &amp; digital marketing</span></div>
+        </div>
       </div>
     </section>
 
-    <section class="content-section alt-section" id="skills">
-      <div class="section-inner">
-        <p class="section-label">02 / <span data-bn="দক্ষতা" data-en="SKILLS">SKILLS</span></p>
-        <h2 data-bn="আমি যে কাজগুলো করি" data-en="What I do">What I do</h2>
-
-        <div class="cards">
-          <article class="card">
-            <span class="card-number">01</span>
-            <h3 data-bn="ওয়েব ডেভেলপমেন্ট" data-en="Web Development">Web Development</h3>
-            <p
-              data-bn="HTML, CSS ও JavaScript ব্যবহার করে রেসপনসিভ এবং ব্যবহারবান্ধব ওয়েবসাইট তৈরি করি।"
-              data-en="I build responsive and user-friendly websites using HTML, CSS, and JavaScript."
-            >I build responsive and user-friendly websites using HTML, CSS, and JavaScript.</p>
+    <section class="skills-section section-block" id="skills">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <p class="section-kicker">02 / <span data-bn="দক্ষতা" data-en="WHAT I DO">WHAT I DO</span></p>
+          <h2 data-bn="যে কাজে আমি সাহায্য করতে পারি" data-en="How I can help">How I can help</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-top"><span class="service-index">01</span><span class="service-icon" aria-hidden="true">⌘</span></div>
+            <h3 data-bn="ওয়েব ডেভেলপমেন্ট" data-en="Web development">Web development</h3>
+            <p data-bn="HTML, CSS ও JavaScript দিয়ে responsive এবং ব্যবহারবান্ধব ওয়েবসাইট তৈরি করি।" data-en="I create responsive, user-friendly websites with HTML, CSS, and JavaScript.">I create responsive, user-friendly websites with HTML, CSS, and JavaScript.</p>
+            <div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
           </article>
-
-          <article class="card">
-            <span class="card-number">02</span>
-            <h3 data-bn="ডিজিটাল মার্কেটিং" data-en="Digital Marketing">Digital Marketing</h3>
-            <p
-              data-bn="অনলাইনে ব্র্যান্ড বা ব্যবসার উপস্থিতি বাড়াতে ডিজিটাল মার্কেটিংয়ের কাজ করি।"
-              data-en="I help brands and businesses grow their online presence through digital marketing."
-            >I help brands and businesses grow their online presence through digital marketing.</p>
+          <article class="service-card">
+            <div class="service-top"><span class="service-index">02</span><span class="service-icon marketing-icon" aria-hidden="true">↗</span></div>
+            <h3 data-bn="ডিজিটাল মার্কেটিং" data-en="Digital marketing">Digital marketing</h3>
+            <p data-bn="অনলাইনে ব্র্যান্ড ও ব্যবসার উপস্থিতি বাড়াতে ডিজিটাল মার্কেটিংয়ের কাজ করি।" data-en="I help improve a brand or business’s presence through digital marketing.">I help improve a brand or business’s presence through digital marketing.</p>
+            <div class="skill-tags"><span data-bn="কনটেন্ট" data-en="Content">Content</span><span data-bn="অনলাইন প্রচার" data-en="Online promotion">Online promotion</span></div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="content-section" id="projects">
-      <div class="section-inner">
-        <p class="section-label">03 / <span data-bn="কাজ" data-en="WORK">WORK</span></p>
+    <section class="work-section section-wrap section-block" id="work">
+      <div class="section-heading">
+        <p class="section-kicker">03 / <span data-bn="নির্বাচিত কাজ" data-en="SELECTED WORK">SELECTED WORK</span></p>
         <h2 data-bn="প্রজেক্ট" data-en="Projects">Projects</h2>
-
-        <div class="project-note">
-          <h3 data-bn="প্রজেক্ট শিগগিরই আসছে" data-en="Projects coming soon">Projects coming soon</h3>
-          <p
-            data-bn="এখনো দেখানোর মতো প্রজেক্ট নেই। নতুন কাজ তৈরি হলে এখানে যোগ করব।"
-            data-en="I don’t have projects to show yet. I’ll add them here as I create new work."
-          >I don’t have projects to show yet. I’ll add them here as I create new work.</p>
+      </div>
+      <a class="project-card" href="#home">
+        <div class="project-preview"><span class="preview-brand">N<span>.</span></span><span class="preview-line"></span><span class="preview-window"><i></i><i></i><i></i></span><span class="preview-title">My portfolio</span></div>
+        <div class="project-details">
+          <div><span class="project-type" data-bn="ব্যক্তিগত ওয়েবসাইট" data-en="PERSONAL WEBSITE">PERSONAL WEBSITE</span><h3 data-bn="আমার পোর্টফোলিও" data-en="Personal portfolio">Personal portfolio</h3><p data-bn="HTML, CSS ও JavaScript দিয়ে তৈরি দ্বিভাষিক পোর্টফোলিও।" data-en="A bilingual portfolio built with HTML, CSS, and JavaScript.">A bilingual portfolio built with HTML, CSS, and JavaScript.</p></div>
+          <span class="project-arrow" aria-hidden="true">↗</span>
         </div>
+      </a>
+      <p class="work-note" data-bn="নতুন কাজ তৈরি হলে সেগুলোও এখানে যোগ করব।" data-en="I’ll add more projects here as I create them.">I’ll add more projects here as I create them.</p>
+    </section>
+
+    <section class="education-section section-block" id="education">
+      <div class="section-wrap education-layout">
+        <div class="section-heading">
+          <p class="section-kicker">04 / <span data-bn="শিক্ষা" data-en="EDUCATION">EDUCATION</span></p>
+          <h2 data-bn="আমার পড়াশোনা" data-en="Education">Education</h2>
+        </div>
+        <article class="education-card">
+          <span class="education-mark" aria-hidden="true">AM</span>
+          <div><h3 data-bn="মাস্টার্স — ইসলামিক স্টাডিজ" data-en="Master’s — Islamic Studies">Master’s — Islamic Studies</h3><p data-bn="আনন্দমোহন কলেজ · ময়মনসিংহ" data-en="Ananda Mohan College · Mymensingh">Ananda Mohan College · Mymensingh</p></div>
+          <span class="education-arrow" aria-hidden="true">↗</span>
+        </article>
       </div>
     </section>
 
-    <section class="content-section alt-section" id="education">
-      <div class="section-inner">
-        <p class="section-label">04 / <span data-bn="শিক্ষা" data-en="EDUCATION">EDUCATION</span></p>
-        <h2 data-bn="আমার শিক্ষা" data-en="Education">Education</h2>
-
-        <div class="education-card">
-          <h3 data-bn="মাস্টার্স — ইসলামিক স্টাডিজ" data-en="Master’s — Islamic Studies">Master’s — Islamic Studies</h3>
-          <p
-            data-bn="আনন্দমোহন কলেজ, ময়মনসিংহ"
-            data-en="Ananda Mohan College, Mymensingh"
-          >Ananda Mohan College, Mymensingh</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contact">
-      <div class="section-inner contact-inner">
+    <section class="contact-section section-block" id="contact">
+      <div class="section-wrap contact-layout">
         <div>
-          <p class="section-label">05 / <span data-bn="যোগাযোগ" data-en="CONTACT">CONTACT</span></p>
-          <h2 data-bn="একসঙ্গে কাজ করি" data-en="Let’s work together">Let’s work together</h2>
-          <p
-            data-bn="কাজ বা প্রজেক্ট নিয়ে কথা বলতে যোগাযোগ করুন।"
-            data-en="Get in touch to discuss a project or opportunity."
-          >Get in touch to discuss a project or opportunity.</p>
+          <p class="section-kicker">05 / <span data-bn="যোগাযোগ" data-en="SAY HELLO">SAY HELLO</span></p>
+          <h2 data-bn="একসঙ্গে ভালো কিছু করি।" data-en="Let’s make something good.">Let’s make something good.</h2>
+          <p class="contact-copy" data-bn="কোনো কাজ বা প্রজেক্ট নিয়ে কথা বলতে আমাকে ইমেইল করুন।" data-en="Have a project in mind? Send me an email and let’s talk.">Have a project in mind? Send me an email and let’s talk.</p>
         </div>
-
-        <div class="contact-links">
-          <a href="mailto:md.nomansagor.8@gmail.com">md.nomansagor.8@gmail.com</a>
-          <a href="tel:+8801560061094">+8801560061094</a>
+        <div class="contact-actions">
+          <a class="email-link" href="mailto:md.nomansagor.8@gmail.com">md.nomansagor.8@gmail.com <span aria-hidden="true">↗</span></a>
+          <a class="phone-link" href="tel:+8801560061094">+880 1560-0601094</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <span>© <span id="year"></span> Noman</span>
-    <a href="#home" data-bn="উপরে যান ↑" data-en="Back to top ↑">Back to top ↑</a>
+  <footer class="site-footer section-wrap">
+    <span>© <span id="year"></span> Soyad Noman Al Rojab</span>
+    <span data-bn="যত্ন নিয়ে তৈরি" data-en="Designed with care">Designed with care</span>
+    <a href="#home" data-bn="উপরে ফিরুন ↑" data-en="Back to top ↑">Back to top ↑</a>
   </footer>
-
-  <script type="module" src="/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-
-
